@@ -1,0 +1,19 @@
+vowel,variant,F1,F2,F3
+whod_m,"24 kHz, order 26 (final)",313,1230,2264
+whod_m,"24 kHz, order 26, pre-emph.",314,1243,2275
+whod_m,"24 kHz, order 12",283,3500,NaN
+whod_m,"24 kHz, order 12, pre-emph.",3454,NaN,NaN
+whod_m,"10 kHz, order 12",310,1231,2267
+whod_m,"10 kHz, order 26",227,383,1099
+whod_f,"24 kHz, order 26 (final)",382,1842,2378
+whod_f,"24 kHz, order 26, pre-emph.",383,1837,2376
+whod_f,"24 kHz, order 12",348,2218,10230
+whod_f,"24 kHz, order 12, pre-emph.",2301,10307,NaN
+whod_f,"10 kHz, order 12",382,1843,2376
+whod_f,"10 kHz, order 26",203,403,844
+hod_f,"24 kHz, order 26 (final)",1061,2789,3883
+hod_f,"24 kHz, order 26, pre-emph.",831,1157,2704
+hod_f,"24 kHz, order 12",930,NaN,NaN
+hod_f,"24 kHz, order 12, pre-emph.",970,NaN,NaN
+hod_f,"10 kHz, order 12",243,899,1209
+hod_f,"10 kHz, order 26",204,596,886

@@ -1,0 +1,113 @@
+EEEM030 CW1 Matlab results (order 26, 100 ms segments)
+Matlab version: 26.2.0.3433840 (R2026b) Update 1
+
+  test 1 PASS: Levinson-Durbin matches a direct solve
+  test 2 PASS: recovers a known AR(2) filter
+  test 3 PASS: covariance and autocorrelation agree on a long signal
+  test 4 PASS: formants of cascaded resonators
+  test 5 PASS: F0 of a pulse-driven vowel
+  test 6 PASS: impulse train rate and shape
+6 of 6 self-tests passed
+
+== whod_m (male): segment 0.035 to 0.135 s, fs 24000 Hz
+Order 26: prediction gain 28.2 dB, G = 0.01042, max pole radius 0.9943
+Built-in lpc(): max |a - a_lpc| = 3.00e-11
+Built-in arcov(): max |a_cov - a_arcov| = 3.72e-15
+Formants F1-F3 = 313  1230  2264 Hz; bandwidths 44  123   78 Hz
+Covariance formants 311  1233  2276 Hz; envelope offset -4.45 dB, RMS after offset 1.20 dB
+LPC curve peaks <5 kHz: 311  1225  2265  3410  3771 Hz
+Cepstral envelope (40 coefficients) peaks <5 kHz: 311  1160  2247  3501  4720 Hz
+Window shifts: min 305  1220  2262, max 317  1241  2283 Hz
+F0: autocorrelation 124.5 Hz (7 frames, sd 0.5), cepstrum 125.6 Hz
+Order sweep: order, gain dB, F1, F2, F3
+   4  23.1  NaN  NaN  NaN
+   8  25.1  290  NaN  NaN
+  12  25.9  283  3500   NaN
+  16  26.5  288  3529  6394
+  20  26.8  275  3548  9331
+  26  28.2  313  1230  2264
+  32  28.5  309  1243  2254
+  40  28.9  272   332  1239
+Length sweep (order 26): ms, gain dB, F1, F2, F3
+   20  27.0  308  1241  2282
+   30  28.0  311  1237  2270
+   50  28.2  311  1234  2264
+  100  28.2  313  1230  2264
+  150  27.8  312  1231  2269
+  200  27.9  310  1225  2267
+24 kHz, order 26 (final): 313  1230  2264
+24 kHz, order 26, pre-emph.: 314  1243  2275
+24 kHz, order 12: 283  3500   NaN
+24 kHz, order 12, pre-emph.: 3454   NaN   NaN
+10 kHz, order 12: 310  1231  2267
+10 kHz, order 26: 227   383  1099
+Synthetic vowel re-analysed: F1-F3 = 311  1232  2255 Hz, F0 = 124.6 Hz, 125 impulses
+
+== whod_f (female): segment 0.080 to 0.180 s, fs 24000 Hz
+Order 26: prediction gain 25.5 dB, G = 0.01512, max pole radius 0.9953
+Built-in lpc(): max |a - a_lpc| = 1.55e-11
+Built-in arcov(): max |a_cov - a_arcov| = 2.53e-15
+Formants F1-F3 = 382  1842  2378 Hz; bandwidths 36  228  128 Hz
+Covariance formants 380  1837  2375 Hz; envelope offset -4.02 dB, RMS after offset 0.46 dB
+LPC curve peaks <5 kHz: 381  1854  2370  3595  4617 Hz
+Cepstral envelope (40 coefficients) peaks <5 kHz: 343   996  2294  3586  4192 Hz
+Window shifts: min 379  1833  2373, max 383  1849  2380 Hz
+F0: autocorrelation 200.0 Hz (7 frames, sd 0.7), cepstrum 200.2 Hz
+Order sweep: order, gain dB, F1, F2, F3
+   4  20.7  NaN  NaN  NaN
+   8  22.6  340  10042    NaN
+  12  23.6  348   2218  10230
+  16  24.0  349   2189  10241
+  20  24.9  349  2236  3681
+  26  25.5  382  1842  2378
+  32  25.7  381  1854  2375
+  40  26.0  227   402  1629
+Length sweep (order 26): ms, gain dB, F1, F2, F3
+   20  24.7  386  1851  2392
+   30  25.0  384  1848  2387
+   50  25.3  383  1845  2383
+  100  25.5  382  1842  2378
+  150  25.4  381  1840  2377
+  200  25.4  381  1837  2377
+24 kHz, order 26 (final): 382  1842  2378
+24 kHz, order 26, pre-emph.: 383  1837  2376
+24 kHz, order 12: 348   2218  10230
+24 kHz, order 12, pre-emph.: 2301  10307    NaN
+10 kHz, order 12: 382  1843  2376
+10 kHz, order 26: 203  403  844
+Synthetic vowel re-analysed: F1-F3 = 400  1827  2391 Hz, F0 = 200.1 Hz, 201 impulses
+
+== hod_f (female): segment 0.062 to 0.162 s, fs 24000 Hz
+Order 26: prediction gain 21.7 dB, G = 0.02022, max pole radius 0.9829
+Built-in lpc(): max |a - a_lpc| = 1.15e-12
+Built-in arcov(): max |a_cov - a_arcov| = 1.33e-15
+Formants F1-F3 = 1061  2789  3883 Hz; bandwidths 286  438  132 Hz
+Covariance formants 1060  2850  3872 Hz; envelope offset -4.34 dB, RMS after offset 0.75 dB
+LPC curve peaks <5 kHz: 996  2766  3879 Hz
+Cepstral envelope (40 coefficients) peaks <5 kHz: 357   967  2174  2827  3885 Hz
+Window shifts: min 1002  2789  3877, max 1074  3879  5327 Hz
+F0: autocorrelation 190.5 Hz (7 frames, sd 1.0), cepstrum 190.1 Hz
+Order sweep: order, gain dB, F1, F2, F3
+   4  19.8  671  NaN  NaN
+   8  20.1  NaN  NaN  NaN
+  12  20.7  930  NaN  NaN
+  16  21.1  956   7786  11077
+  20  21.4  312  1012  3873
+  26  21.7  1061  2789  3883
+  32  22.0  245   855  1203
+  40  22.1  236   823  1182
+Length sweep (order 26): ms, gain dB, F1, F2, F3
+   20  22.1  1081  2725  3895
+   30  22.0  1069  2741  3889
+   50  21.9  1061  2748  3886
+  100  21.7  1061  2789  3883
+  150  21.5  1059  2822  3880
+  200  21.2  1058  2832  3878
+24 kHz, order 26 (final): 1061  2789  3883
+24 kHz, order 26, pre-emph.: 831  1157  2704
+24 kHz, order 12: 930  NaN  NaN
+24 kHz, order 12, pre-emph.: 970  NaN  NaN
+10 kHz, order 12: 243   899  1209
+10 kHz, order 26: 204  596  886
+Synthetic vowel re-analysed: F1-F3 = 1067  2784  3870 Hz, F0 = 190.5 Hz, 191 impulses
+
