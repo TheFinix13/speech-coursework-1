@@ -1,4 +1,4 @@
-% CW1_LPC_VOWELS  EEEM030 Assignment 1: linear predictive vowel synthesiser.
+% CW1_LPC_VOWELS  EEEM030 Coursework 1: linear predictive vowel synthesiser.
 %
 % This script does the whole coursework in Matlab: it reads the vowel
 % recordings, estimates the LPC filters, finds the formants and F0,
