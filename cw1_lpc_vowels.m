@@ -207,7 +207,7 @@ for v = 1:numel(vowels)
     if isMain(v)
         write_wav(fullfile(audDir, [name '_synth_final.wav']), y, fs);
         write_wav(fullfile(audDir, [name '_original_segment.wav']), normalise_peak(seg, 0.9), fs);
-        write_wav(fullfile(audDir, [name '_impulse_train.wav']), 0.5 * exc, fs);
+        write_wav(fullfile(audDir, [name '_impulse_train.wav']), 0.5 * exc, fs, false);
         for p = [4 8 12 26 40]
             [ap, gp] = lpc_autocorr(seg, p, true);
             write_wav(fullfile(audDir, sprintf('%s_synth_order%02d.wav', name, p)), normalise_peak(filter(gp, ap, exc), 0.9), fs);
@@ -295,8 +295,15 @@ function write_lines(path, header, rows)
     fclose(f);
 end
 
-function write_wav(path, y, fs)
+function write_wav(path, y, fs, fade)
     % audiowrite wants one column per channel, so the row vector is transposed.
+    % The first and last 10 ms are faded so the files do not start or stop with a click.
+    if nargin < 4 || fade
+        n = round(0.010 * fs);
+        w = 0.5 * (1 - cos(pi * (0:n-1) / n));
+        y(1:n) = y(1:n) .* w;
+        y(end-n+1:end) = y(end-n+1:end) .* fliplr(w);
+    end
     audiowrite(path, y(:), fs, 'BitsPerSample', 16);
 end
 
